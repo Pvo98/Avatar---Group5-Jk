@@ -136,7 +136,7 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
             break
         elif event == 'BrainControl':
             # Code for Home
-            #window1.unhide()
+            window1.unhide()
             window1.write_event_value('Start Page', 'Brainwave Reading')
             new_manual_drone_control_window.close()
             
