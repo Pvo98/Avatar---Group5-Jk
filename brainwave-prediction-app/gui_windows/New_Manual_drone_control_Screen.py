@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import GUI.py as test
-def manual_drone_control_window(items, get_drone_action, window1):
+def new_manual_drone_control_window(items, get_drone_action, window1):
 
     # Define the layout for the Manual Drone Control Page
 
@@ -28,6 +28,7 @@ def manual_drone_control_window(items, get_drone_action, window1):
          sg.Button('Right', size=(8, 2),
                    image_filename="brainwave-prediction-app/images/right.png"),
          sg.Button('Turn Right', size=(8, 2), image_filename="brainwave-prediction-app/images/turnRight.png")],
+
 
         [sg.Button('Back', size=(8, 2),
                    image_filename="brainwave-prediction-app/images/back.png")],
