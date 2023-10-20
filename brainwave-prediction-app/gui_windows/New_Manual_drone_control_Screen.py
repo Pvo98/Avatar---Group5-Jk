@@ -17,15 +17,14 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
         values=[], size=(30, 6), key='LOG')]]
     new_bottom_center = [
         [sg.Button('Down', size=(8, 2), image_filename="brainwave-prediction-app/images/down.png")]]
+    new_middle_center = [sg.Push(), sg.Push(), sg.Button('Forward', size=(8, 2),
+                                         image_filename="brainwave-prediction-app/images/forward.png"), sg.Push(), sg.Push(),],
 
     new_manual_drone_control_layout = [
         [sg.Button('Home', size=(8, 2), image_filename="brainwave-prediction-app/images/home.png"), sg.Push(),
          sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
         [sg.Button('BrainControl', size=(8, 2), image_filename="brainwave-prediction-app/images/brain.png"), sg.Push(),
-         sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
-        [sg.Push(), sg.Push(), sg.Button('Forward', size=(8, 2),
-                                         image_filename="brainwave-prediction-app/images/forward.png"), sg.Push(), sg.Push(),],
-
+         sg.Column(new_middle_center, pad=((55, 0), (0, 0))) ],
         [sg.Button('Turn Left', size=(8, 2), image_filename="brainwave-prediction-app/images/turnLeft.png"),
          sg.Button('Left', size=(8, 2),
                    image_filename="brainwave-prediction-app/images/left.png"),
