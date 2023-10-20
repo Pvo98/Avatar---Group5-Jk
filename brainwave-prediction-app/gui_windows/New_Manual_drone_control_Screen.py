@@ -40,7 +40,7 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
         [sg.Button('Connect', size=(8, 2), image_filename="brainwave-prediction-app/images/connect.png"), sg.Push(), sg.Push(), sg.Column(new_bottom_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Button('Takeoff', size=(8, 2), image_filename="brainwave-prediction-app/images/takeoff.png"), sg.Button('Land', size=(8, 2), image_filename="brainwave-prediction-app/images/land.png")]]
 
     new_manual_drone_control_window = sg.Window(
-        'Manual Drone Control', new_manual_drone_control_layout, size=(1000, 1000), element_justification='c')
+        'Manual Drone Control', new_manual_drone_control_layout, size=(1000, 1000), element_justification='c',location=(0,0))
 
     first_iteration = True
 
