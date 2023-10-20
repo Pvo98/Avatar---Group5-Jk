@@ -1,17 +1,7 @@
 import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
 
-'LightGreen3': {'BACKGROUND': '#A8C1B4',
-               'TEXT': 'black',
-               'INPUT': '#DDE0DE',
-               'SCROLL': '#E3E3E3',
-               'TEXT_INPUT': 'black',
-               'BUTTON': ('white', '#6D9F85'),
-               'BORDER': 1,
-               'SLIDER_DEPTH': 0,
-               'PROGRESS_DEPTH': 0}
-
-sg.theme('LightGreen3')
+sg.theme('Dark Grey')
 
 def brainflow_use():
     from GUI import use_brainflow
