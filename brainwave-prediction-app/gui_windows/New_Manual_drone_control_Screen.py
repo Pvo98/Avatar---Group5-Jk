@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
-from ..GUI import use_brainflow
+
 def new_manual_drone_control_window(items, get_drone_action, window1):
 
     # Define the layout for the Manual Drone Control Page
@@ -136,9 +136,12 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
             break
         elif event == 'BrainControl':
             # Code for Home
+            #window1.unhide()
+            window1.write_event_value('Start Page', 'Brainwave Reading')
             new_manual_drone_control_window.close()
-            window1.un_hide()
-            brainwave_prediction_window(window1, get_drone_action, use_brainflow)
+            
+
+            #brainwave_prediction_window(window1, get_drone_action, use_brainflow)
             break
         elif event == 'Connect':
             # Code for Connect
