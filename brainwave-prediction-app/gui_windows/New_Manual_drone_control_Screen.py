@@ -12,8 +12,7 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
         [sg.Button('Down', size=(8, 2), image_filename="brainwave-prediction-app/images/down.png")]]
 
     new_manual_drone_control_layout = [
-        [sg.Button('Home', size=(8, 2), image_filename="brainwave-prediction-app/images/home.png"), sg.Push(),
-         sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
+        [sg.Button('Home', size=(8, 2), image_filename="brainwave-prediction-app/images/home.png"), sg.Push(),],
         [sg.Button('BrainControl', size=(8, 2), image_filename="brainwave-prediction-app/images/brain.png"), sg.Push(),
          sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
         [sg.Push(), sg.Push(), sg.Button('Forward', size=(8, 2),
