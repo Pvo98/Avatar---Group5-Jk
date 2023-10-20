@@ -4,18 +4,18 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
     # Define the layout for the Manual Drone Control Page
 
     # Column layouts for centering"Done.")
-    top_center = [
+    new_top_center = [
         [sg.Button('Up', size=(8, 2), image_filename="brainwave-prediction-app/images/up.png")]]
-    top_right = [[sg.Text('Flight Log')], [sg.Listbox(
+    new_top_right = [[sg.Text('Flight Log')], [sg.Listbox(
         values=[], size=(30, 6), key='LOG')]]
-    bottom_center = [
+    new_bottom_center = [
         [sg.Button('Down', size=(8, 2), image_filename="brainwave-prediction-app/images/down.png")]]
 
     new_manual_drone_control_layout = [
         [sg.Button('Home', size=(8, 2), image_filename="brainwave-prediction-app/images/home.png"), sg.Push(),
-         sg.Column(top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(top_right), ],
+         sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
         [sg.Button('BrainControl', size=(8, 2), image_filename="brainwave-prediction-app/images/brain.png"), sg.Push(),
-         sg.Column(top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(top_right), ],
+         sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
         [sg.Push(), sg.Push(), sg.Button('Forward', size=(8, 2),
                                          image_filename="brainwave-prediction-app/images/forward.png"), sg.Push(), sg.Push(),],
 
