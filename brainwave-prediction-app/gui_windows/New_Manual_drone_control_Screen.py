@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
 x=5
 y=5
+z=5
 sg.theme('Dark Grey')
 
 def brainflow_use():
