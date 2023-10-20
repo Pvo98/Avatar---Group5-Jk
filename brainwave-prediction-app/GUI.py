@@ -15,7 +15,9 @@ from djitellopy import Tello
 tello = Tello()
 # tello.takeoff()
 
-
+x=5
+x=1
+x=4
 # receives action from a GUI button and executes a corresponding Tello-Drone class move action, then returns "Done"
 
 
