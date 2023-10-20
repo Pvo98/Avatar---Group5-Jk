@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
-
+from GUI import use_brainflow
 def new_manual_drone_control_window(items, get_drone_action, window1):
 
     # Define the layout for the Manual Drone Control Page
