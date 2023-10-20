@@ -1,5 +1,4 @@
 import PySimpleGUI as sg
-import GUI.py as test
 def new_manual_drone_control_window(items, get_drone_action, window1):
 
     # Define the layout for the Manual Drone Control Page
