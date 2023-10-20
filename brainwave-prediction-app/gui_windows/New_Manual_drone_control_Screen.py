@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
-
+x=5
+y=5
 sg.theme('Dark Grey')
 
 def brainflow_use():
@@ -20,7 +21,7 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
         [sg.Button('Down', size=(8, 2), image_filename="brainwave-prediction-app/images/down.png")]]
     new_middle_center = [sg.Push(), sg.Push(), sg.Button('Forward', size=(8, 2),
                                          image_filename="brainwave-prediction-app/images/forward.png"), sg.Push(), sg.Push(),],
-
+#test
     new_manual_drone_control_layout = [
         [sg.Button('Home', size=(8, 2), image_filename="brainwave-prediction-app/images/home.png"), sg.Push(),
          sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
