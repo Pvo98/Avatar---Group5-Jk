@@ -4,7 +4,7 @@ import random
 import cv2
 from client.brainflow1 import bciConnection
 
-from gui_windows.manual_drone_control_window import manual_drone_control_window
+#from gui_windows.manual_drone_control_window import manual_drone_control_window
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
 from gui_windows.New_Manual_drone_control_Screen import new_manual_drone_control_window
 
