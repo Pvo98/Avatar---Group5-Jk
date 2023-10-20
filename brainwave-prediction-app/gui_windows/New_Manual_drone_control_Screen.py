@@ -136,8 +136,8 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
             break
         elif event == 'BrainControl':
             # Code for Home
-            new_manual_drone_control_window.close()
-            brainwave_prediction_window(window1, get_drone_action, use_brainflow)
+            new_manual_drone_control_window.hide()
+            brainwave_prediction_window(new_manual_drone_control_window, get_drone_action, use_brainflow())
             #window1.unhide()
             
             #brainwave_prediction_window(window1, get_drone_action, use_brainflow)
