@@ -1,6 +1,17 @@
 import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
 
+'LightGreen3': {'BACKGROUND': '#A8C1B4',
+               'TEXT': 'black',
+               'INPUT': '#DDE0DE',
+               'SCROLL': '#E3E3E3',
+               'TEXT_INPUT': 'black',
+               'BUTTON': ('white', '#6D9F85'),
+               'BORDER': 1,
+               'SLIDER_DEPTH': 0,
+               'PROGRESS_DEPTH': 0}
+
+sg.theme('LightGreen3')
 
 def brainflow_use():
     from GUI import use_brainflow
@@ -24,7 +35,7 @@ def new_manual_drone_control_window(items, get_drone_action, window1):
         [sg.Button('Home', size=(8, 2), image_filename="brainwave-prediction-app/images/home.png"), sg.Push(),
          sg.Column(new_top_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column(new_top_right), ],
         [sg.Button('BrainControl', size=(8, 2), image_filename="brainwave-prediction-app/images/brain.png"), sg.Push(),
-         sg.Column(new_middle_center, pad=((55, 0), (0, 0))), sg.Push(), sg.Column((0,0)), ],
+         sg.Column(new_middle_center, pad=((55, 0), (0, 0))) ],
         [sg.Button('Turn Left', size=(8, 2), image_filename="brainwave-prediction-app/images/turnLeft.png"),
          sg.Button('Left', size=(8, 2),
                    image_filename="brainwave-prediction-app/images/left.png"),
