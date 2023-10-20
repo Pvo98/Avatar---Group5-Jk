@@ -1,9 +1,10 @@
 import PySimpleGUI as sg
 from gui_windows.brainwave_prediction_window import brainwave_prediction_window
-import GUI
+
 
 def brainflow_use():
-    return GUI.use_brainflow()
+    from GUI import use_brainflow
+    return use_brainflow()
 
 def new_manual_drone_control_window(items, get_drone_action, window1):
 
